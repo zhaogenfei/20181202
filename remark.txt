@@ -1,1 +1,16 @@
-我在用git
+第1步：第1步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+ssh-keygen -t rsa -C "youremail@example.com"
+
+第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
+
+第3步：登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个新的仓库
+
+第四步：关联远程库，使用命令：
+	git remote add origin git@server-name:path/repo-name.git
+	
+	git@server-name:path/repo-name.git是git厂库的名称如：https://github.com/zhaogenfei/20181201.git
+	
+第5步：把本地仓库的文件推送到远程仓库
+	关联后，使用命令：git push -u origin master
+	第一次推送master分支的所有内容	
