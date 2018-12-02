@@ -16,3 +16,6 @@ ssh-keygen -t rsa -C "youremail@example.com"
 第5步：把本地仓库的文件推送到远程仓库
 	关联后，使用命令：git push -u origin master
 	第一次推送master分支的所有内容	
+	
+	
+转载：https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375233990231ac8cf32ef1b24887a5209f83e01cb94b000	
