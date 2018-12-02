@@ -9,7 +9,9 @@ ssh-keygen -t rsa -C "youremail@example.com"
 第四步：关联远程库，使用命令：
 	git remote add origin git@server-name:path/repo-name.git
 	
-	git@server-name:path/repo-name.git是git厂库的名称如：https://github.com/zhaogenfei/20181201.git
+	git@server-name:path/repo-name.git是git厂库的名称如：
+	https://github.com/zhaogenfei/20181201.git
+	git@github.com:zhaogenfei/gitinfo.git
 	
 第5步：把本地仓库的文件推送到远程仓库
 	关联后，使用命令：git push -u origin master
